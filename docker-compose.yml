@@ -1,0 +1,9 @@
+web:
+  image: tsari/jessie-apache2-php-xdebug
+  ports:
+   - "80:80"
+   - "2200:22"
+  volumes:
+   - ./:/var/www
+   - ./log/:/var/log/apache2
+  container_name: web-xdebug
